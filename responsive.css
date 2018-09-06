@@ -1,0 +1,267 @@
+@media screen and (min-width: 1100px) {
+	.container {
+		width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media screen and (min-width: 100px) and (max-width: 350px) {
+	.aboutMe, .item, .workExperience, .contact {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+	}
+	.project_container {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.h1_title {
+		display: inline-block;
+		color: #f80;
+		font-size: 14px;
+		padding: 0.5em 0.25em;
+		margin-left: 1em;
+		margin-top: 2px;
+	}
+	.project_pic {
+		height: 150px;
+		width: 90vw;
+	}
+	.email {
+		font-size: 12px;
+	}
+	.myPic {
+		width: 65%;
+		height: 65%;
+		margin-top: 15%;
+	}
+	.itemPortfolio {
+		height: 50%;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 350px) {
+	.h1_title {
+		position: relative;
+		display: inline-block;
+		color: #f80;
+		font-size: 15px;
+		padding: 0.5em 0.25em;
+		margin-top: 2px;
+		margin-right: 2em;
+	}
+	.logo {
+		margin-left: 0;
+		width: 130px;
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.logo {
+		height: 90px;
+		width: 150px;
+		margin-left: 0;
+	}
+	.h1_title {
+		font-size: 18px;
+	}
+	.header_section {
+		height: 200px;
+	}
+	.aboutMe, .item, .workExperience, .contact {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.jennyInt {
+		line-height: 25px;
+	}
+	.Email {
+		font-size: 18px;
+	}
+	.itemPortfolio {
+		height: 950px;
+	}
+	.itemEducation {
+		height:800px;
+	}
+	.project_pic {
+		width: 100vw;
+	}
+	.email2, .email {
+		font-size: 14px;
+	}
+	.myPic {
+		width: 65%;
+		height: 65%;
+		margin-top: 15%;
+	}
+}
+
+@media screen and (min-width: 479px) and (max-width: 650px) {
+	.header_section {
+		height: 100px;
+	}
+	.h1_title {
+		margin-left: 12px;
+	}
+	.header_section {
+		height: 210px;
+	}
+	.myPic {
+		width: 65%;
+		height: 65%;
+		margin-top: 15%;
+	}
+}
+
+/*
+* media querry screen less then 620px 
+* within off cavans menu will be set
+*/
+@media screen and (max-width: 650px) {
+	.nav {
+		z-index: 10px;
+		background-color: #0FF;
+		width: 300px;
+		height: 400px;
+		float: left;
+		position: absolute;
+
+		/*Transform the drawer off cavans*/
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		transform: transform 0.3s ease;
+	}
+	.nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	/* Off cavans menu setting Ends here*/	
+
+	.logo {
+		height: 90px;
+		width: 150px;
+		margin-left: 0;
+	}
+	.header__menu {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		padding: 1em;
+		float: right;
+	}
+
+	.header__menu svg {
+		width: 32px;
+		margin-top: 0;
+	}
+	.h1_title {
+		font-size: 18px;
+		margin-top: 2px;
+		position: relative;
+	}
+	
+	.aboutMe, .item, .workExperience, .contact {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.jennyInt {
+		line-height: 25px;
+	}
+	.certificate {
+		height: 200px;
+		width: 80%;
+	}
+	.about_contact {
+		font-size: 18px;
+	}
+	.Email {
+		font-size: 18px;
+	}
+	.project_pic {
+		height: 250px;
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.form {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.smallScreen {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.header__menu svg {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+	.nav li {
+		font-weight: 0;
+		padding: 10px;
+		margin-top: 10px;
+	}
+	.h1_title {
+		font-size: 30px;
+	}
+	.itemPortfolio {
+		height: 800px;
+		width: 80%;
+	}
+	.myPic {
+		width: 65%;
+		height: 65%;
+		margin-top: 15%;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+	.project_pic {
+		height: 200px;
+		max-width: 100%;
+	}
+	.itemPortfolio {
+		margin-left: 90px;
+		width: 40%;
+		height: 800px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.h1_title {
+		font-size: 20px;
+		margin-top: 2px;
+		position: relative;
+		margin-left: 5px; 
+	}
+	.logo {
+		margin-left: 0;
+	}
+	.Email {
+		margin-top: 5px;
+	}
+	.itemEducation, .itemSkills {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 35px;
+	}
+	.project_pic {
+		height: 300px;
+		width: 60vw;
+	}
+}

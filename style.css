@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+
+
+/*
+* Header section
+*/
+.header_section {
+	box-shadow: 0px 5px 10px rgba(0, 0, 1, 0.5);
+	width: 100%;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.content{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo {
+	height: 97px;
+	margin-left: 10px;
+	float: left;
+}
+
+.h1_title {
+	font-weight: 500;
+	display: inline-block;
+	color: #f80;
+	padding: 0.5em 0.25em;
+	margin-left: 6em;
+	margin-top: 2px;
+	font-family: 'Great Vibes', cursive;
+  	font-size: 3em;
+}
+.Email {
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	color: #58f;
+	text-decoration: none;
+}
+
+.contactIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.SocialMedia {
+	text-align: center;
+}
+.icon {
+	margin: 20px;
+}
+
+
+/*
+* Navigation section
+*/
+.nav {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	background-color: orange;
+}
+.nav li {
+	display: inline-block;
+	padding: 10px 40px 10px 40px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 16px;
+}
+.nav ul {
+	
+	height: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin: 0;
+}
+.nav a {
+	text-decoration: none;
+}
+
+/*
+* Slide show of my pics
+*/
+#slides {
+	width: 100%;
+	height: 70vh;
+	background-color: grey;
+	text-align: center;
+	display: block;
+	background: #323232;
+	background-image: url(images/business-code.jpg),
+	url(images/apple-business-computer.jpg),
+	url(images/graphicDesign.jpg);
+	background-size: cover, 0px, 0px, 0px;
+
+	-webkit-transition: background-image 3000ms linear;
+	-moz-transition: background-image 3000ms linear;
+	-ms-transition: background-image 3000ms linear;
+	-o-transition: background-image 3000ms linear;
+	transition: background-image 3000ms linear;
+}
+.myPic {
+	height: 68vh;
+	width: 30vw;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+
+
+/*
+*About me section
+*/
+.centerAlign {
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	color: rgba(0, 0, 0, 0.84);
+	font-size: 21px;
+	text-align: center;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.aboutMe_P {
+	text-align: justify;
+	font-size: 21px;
+	line-height: 35px;
+}
+h2 {
+	color: red;
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	font-size: 28px;
+}
+.contactAbout {
+	text-align: justify;
+	color: #58f;
+	text-decoration: none;
+}
+
+/*
+*FlexBox Setting
+*/
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 400px;
+	height: 600px;
+	margin-left: 130px;
+}
+
+
+/*
+*Education section
+*/
+.education {
+	text-align: center;
+}
+
+.educationContainer {
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	font-size: 21px;
+	background-color: lightgrey;
+	margin: 0;
+	padding-top: 30px;
+	width: 100%;
+}
+
+.certificate {
+	height: 150px;
+	width: 250px;
+}
+
+.item > ul {
+	line-height: 30px;
+}
+
+#certif:hover {
+	width: 500px;
+	height: 400px;
+}
+
+.itemEducation {
+	height: 700px;
+}
+
+/*
+*Work Experience section
+*/
+.workExperience {
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: rgba(0, 0, 0, 0.84);
+	text-align: justify;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 35px;
+}
+
+.workExperience h2 {
+	text-align: center;
+}
+.workExperience p{
+	font-size: 21px;
+}
+.jennyInt {
+	line-height: 3px;
+}
+
+
+/*
+* Portfolio section
+*/
+.project_pic {
+	height: 200px;
+	width: 400px;
+}
+.portfolio {
+	text-align: center;
+}
+.project_container {
+	background-color: #FFF8DC;
+	margin: 0;
+	padding: 10px;
+}
+.project_details {
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	text-align: justify;
+	line-height: 30px;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.84);
+}
+.itemPortfolio {
+	height: 700px;
+}
+.itemPortfolio h3 {
+	color: #F05;
+	font-size: 23px;
+}
+
+hr {
+	height: 5px;
+	color: orange;
+	background-color: orange;
+}
+.hr_1 {
+	margin-top: 29px;
+}
+.hr_4 {
+	margin-top: 24px;
+}
+.hr_6 {
+	margin-top: 22px;
+}
+
+
+
+/*
+* Contact section
+*/
+.contact {
+	font-family: medium-content-serif-font, 
+	Georgia, Cambria, "Times New Roman", Times, serif;
+	text-align: justify;
+	line-height: 35px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 21px;
+	color: rgba(0, 0, 0, 0.84);
+}
+.contact h2 {
+	text-align: center;
+}
+.form {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.smallScreen {
+	text-align: center;
+}
+
+.goToTop {
+	float: right;
+	color: white;
+	font-size: 20px;
+	margin-right: 10px;
+	background-color: white;
+	padding: 2px;
+}
+
+/*
+* footer section
+*/
+footer {
+	margin: 0;
+	padding: 10px;
+	background-color: #111;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
