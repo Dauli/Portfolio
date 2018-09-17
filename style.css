@@ -135,7 +135,7 @@ html, body {
 	margin-left: auto;
 }
 .aboutMe_P {
-	text-align: none;
+	text-align: left;
 	font-size: 21px;
 	line-height: 35px;
 }
