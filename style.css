@@ -61,7 +61,7 @@ html, body {
 	margin: 20px;
 }
 
-.content > svg {
+.header__menu > svg {
 	background-color: #fff;
 	border-radius: 5px;
 	border-style: solid;
