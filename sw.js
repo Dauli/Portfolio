@@ -12,7 +12,7 @@ self.addEventListener('active', function(event) {
 self.addEventListener('fetch', function (event) {
   // handle ofline functionality
   if (!navigator.onLine) {
-    event.respondWith(new Response('<h1> ofLine: You are ofLine </h1>'));
+    event.respondWith(new Response('<h1> offline:( </h1>', {headers: {'Content-Type' : 'text/html'}} ) );
   } else {
     console.log(event.request.url);
     event.respondWith(fetch(event.request));
