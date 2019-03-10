@@ -5,7 +5,7 @@ if ('serviceWorker' in navigator) {
 	.catch(console.error)
 }
 
-// jquery
+// jquery for canvas display
 $(function(){
 	// Slide show of the page
 	$.fx.interval = 0;
