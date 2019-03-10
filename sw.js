@@ -8,3 +8,8 @@ self.addEventListener('install', function(event) {
 self.addEventListener('active', function(event) {
   console.log('SW v%s activated at ', version, new Date().toLocaleDateString());
 });
+
+self.addEventListener('fetch', function (event) {
+  console.log(event.request.url);
+  event.respondWith(fetch(event.request));
+});
