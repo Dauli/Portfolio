@@ -10,6 +10,11 @@ self.addEventListener('active', function(event) {
 });
 
 self.addEventListener('fetch', function (event) {
-  console.log(event.request.url);
-  event.respondWith(fetch(event.request));
+  // handle ofline functionality
+  if (!navigator.onLine) {
+    event.respondWith(new Response('<h1> ofLine: You are ofLine </h1>'));
+  } else {
+    console.log(event.request.url);
+    event.respondWith(fetch(event.request));
+  } 
 });
