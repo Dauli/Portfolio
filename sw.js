@@ -5,8 +5,8 @@ self.addEventListener('install', function(event) {
         caches.open(version)
         .then(function(cache) {
             return cache.addAll([
-                '/offline/offline-embede.html',
-                'offline/ohno.png'
+                './offline-embede.html',
+                './ohno.png'
             ]);
         })
     )
