@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Offline:(</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                background: #3d697f;
+            }
+
+            .offline {
+                font-size: 16px;
+                text-align: center;
+                font-family: Arial, x-locale-body, sans-serif;
+                color: bisque;
+            }
+
+            h1 {
+                font-family: "Lucida Console", Monaco, monospace;
+                color: #97340c;
+                text-align: center;
+                top: 20px;
+            }
+            .offlinePic {
+                width: 20%px;
+                margin-left: 38%;
+                margin-right: 38%;
+            }
+
+            main {
+                height: 75vh;
+                overflow-y: auto;
+            }
+            footer {
+                position: fixed;
+                width: 100%;
+                height: 25vh;
+                background: #0c0404;
+                color: beige;
+                text-align: center;
+            }
+
+            footer > p {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Dauli's Portfolio</h1>
+        </header>
+        <main>
+            <img class="offlinePic" src="ohno.png" alt="image that display is offline mode">
+            <div >
+                <p class="offline">
+                    Oh no! it looks like you are offline.<br>
+                    Please come back later when you find an internet connection.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p>Dauli's Portfolio<br> You are offline</p>
+        </footer>
+        
+        <script src="sw.js"></script>
+    </body>
+</html>
