@@ -5,7 +5,7 @@ self.addEventListener('install', function(event) {
         caches.open(version)
         .then(function(cache) {
             return cache.addAll([
-                '/content/offline-embeded.html',
+                'content/offline-embeded.html',
                 'content/ohno.png'
             ]);
         })
