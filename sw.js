@@ -28,7 +28,7 @@ self.addEventListener('fetch', function(event) {
             }
             
             if(!navigator.onLine) {
-                return caches.match(new Request(['content/offline-embeded.html', 'content/ohno.png']));
+                return caches.match(new Request('content/offline-embeded.html'));
             }
             
             return fetch(event.request);
