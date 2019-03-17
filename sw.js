@@ -1,12 +1,11 @@
-const version = 1;
+const version = 2;
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(version)
         .then(function(cache) {
             return cache.addAll([
-                './offline-embede.html',
-                './ohno.png'
+                '/content/offline-embeded.html'
             ]);
         })
     )
