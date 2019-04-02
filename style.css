@@ -210,6 +210,79 @@ h2 {
 	height: 700px;
 }
 
+/* 
+** CSS setting for gallery start here:
+*/
+
+.gallery {
+	text-align: center;
+	font-size: 30px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 21%;
+	padding: 16px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	width: 220px;
+	height: 200px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containerImg {
+	position: relative;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	height: 60%;
+  }
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: rgb(129, 9, 9);
+	font-size: 20px;
+	background: rgb(119, 68, 85, 0.5);
+	padding: 10px;
+	border-radius: 10px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: red;
+	font-size: 35px;
+	cursor: pointer;
+  }
+
+
 /*
 *Work Experience section
 */
