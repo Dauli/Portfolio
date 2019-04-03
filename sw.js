@@ -1,3 +1,5 @@
+/* 
+
 /*
     This code containt the service Worker implementation coded by Alexis Ange Dauli
     We install service worker to save caches that can be used offline 
@@ -77,3 +79,4 @@ function fetchAndUpdate(request) {
     });
 }
 
+*/
