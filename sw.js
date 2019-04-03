@@ -8,7 +8,7 @@
 /*
 ** cache APIs help us to add content and to remove it whenever 
 ** we want to
-*/
+
 
 const version = 'v2';
 
@@ -58,12 +58,12 @@ self.addEventListener('fetch', function(event) {
     )
 });
 
-/*  
+  
 ** let user add content to the SW via caches 
 ** so any link that user visit will be stores in cache to use in offline
 ** but when user try to access a link that wasn't navigate before in online
 ** the standard offline content will be dispalyed.
-*/
+
 function fetchAndUpdate(request) {
     return fetch(request)
     .then( function(res) {
